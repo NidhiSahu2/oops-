@@ -1,15 +1,29 @@
+//using function overloading //
+
 #include<iostream>
 using namespace std;
-float devision(int x,int y)
+class A
 {
-	return (x/y);
+	public:
+	int showdata( int a , int b)
+	{
+		return a+b;
+		
+	}
+	int showdata(float c)
+
+		
+	{
+		return c*c;
+	}
+};
+    int main()
+    {
+	    A obj;
+       obj.showdata(4,6);
+       obj. showdata(1.1f);
+	   cout<<obj.showdata(4,6)<<endl;
+	   cout<<obj.showdata(1.1f)<<endl;
+	   
 }
-int main()
-{
-	int i=50;
-	int j=0;
-	float k=0;
-	k=devision(i,j);
-	cout<<k<<endl;
-	return 0;
-}
+
